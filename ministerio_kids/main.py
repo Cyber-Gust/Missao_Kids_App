@@ -6,7 +6,12 @@ from src.interface.main_window import MainWindow
 
 def main():
     # Configurar o ambiente
-    os.makedirs('data', exist_ok=True)
+    # Obter o diretório onde o script está localizado
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    # Definir o caminho para o diretório de dados
+    DATA_DIR = os.path.join(BASE_DIR, "data")
+    # Criar o diretório se não existir
+    os.makedirs(DATA_DIR, exist_ok=True)
     
     # Iniciar a aplicação
     app = QApplication(sys.argv)

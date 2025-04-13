@@ -1,0 +1,203 @@
+/* Estilos específicos para interfaces secundárias */
+
+/* Cadastro Window */
+#cadastroWindow {
+    background-color: #FFFFFF;
+}
+
+/* Títulos nas interfaces secundárias */
+.titulo-secao {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+    margin: 10px 0;
+}
+
+/* Formulários */
+QGroupBox {
+    border: 1px solid #D5E8D4;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #F9FCFA;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    background-color: #FFFFFF;
+    color: #5D9B7C;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+QLineEdit, QTextEdit, QDateEdit, QComboBox {
+    border: 1px solid #D5E8D4;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+QLineEdit:focus, QTextEdit:focus, QDateEdit:focus, QComboBox:focus {
+    border: 1px solid #A8D5BA;
+    background-color: #F0F9F5;
+}
+
+/* Botões específicos */
+QPushButton#btn_cadastrar {
+    background-color: #FFD8B1;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+QPushButton#btn_cadastrar:hover {
+    background-color: #FFCCA0;
+}
+
+QPushButton#btn_limpar {
+    background-color: #D4E5F7;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+QPushButton#btn_limpar:hover {
+    background-color: #C3D4E6;
+}
+
+QPushButton#btn_excluir {
+    background-color: #F9D5E5;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+QPushButton#btn_excluir:hover {
+    background-color: #F0C6D6;
+}
+
+QPushButton#btn_editar {
+    background-color: #A8D5BA;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+QPushButton#btn_editar:hover {
+    background-color: #97C4A9;
+}
+
+QPushButton#btn_voltar {
+    background-color: transparent;
+    border: none;
+}
+
+/* Lista de crianças */
+QListWidget {
+    border: 1px solid #D5E8D4;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 5px;
+}
+
+QListWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #F0F0F0;
+    margin: 2px 0;
+}
+
+QListWidget::item:selected {
+    background-color: #FFE6CC;
+    color: #333333;
+    border-radius: 4px;
+}
+
+QListWidget::item:hover {
+    background-color: #F5F5F5;
+}
+
+/* CheckBox */
+QCheckBox {
+    color: #333333;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator:unchecked {
+    border: 1px solid #D5E8D4;
+    background-color: #FFFFFF;
+}
+
+QCheckBox::indicator:checked {
+    border: 1px solid #A8D5BA;
+    background-color: #A8D5BA;
+}
+
+/* ScrollArea */
+QScrollArea {
+    border: none;
+    background-color: transparent;
+}
+
+/* Checkin Window */
+#checkinWindow QLabel {
+    color: #333333;
+}
+
+#checkinWindow QPushButton {
+    min-height: 40px;
+}
+
+/* Galeria Window */
+#galeriaWindow {
+    background-color: #FFFFFF;
+}
+
+#galeriaWindow QLabel[galeria="true"] {
+    background-color: #F5F5F5;
+    border: 1px solid #D5E8D4;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* Relatórios Window */
+#relatoriosWindow QTableWidget {
+    border: 1px solid #D5E8D4;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    alternate-background-color: #F9FCFA;
+}
+
+#relatoriosWindow QTableWidget::item {
+    padding: 5px;
+}
+
+#relatoriosWindow QTableWidget::item:selected {
+    background-color: #FFE6CC;
+    color: #333333;
+}
+
+#relatoriosWindow QHeaderView::section {
+    background-color: #A8D5BA;
+    color: #333333;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+}

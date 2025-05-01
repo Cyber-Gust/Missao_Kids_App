@@ -1,91 +1,65 @@
-Ministério Kids - Sistema de Gerenciamento para Ministério Infantil
-🏠 🧒 👦 👧 📊 📷 🔄
+# 👧🧒 Missão Kids App
 
-Descrição
-O Ministério Kids é um sistema completo para gerenciamento de ministério infantil em igrejas evangélicas. Desenvolvido com Python e PyQt5, oferece uma interface amigável para cadastro de crianças, check-in/check-out, relatórios estatísticos e galeria de imagens.
+**Gestão moderna e segura do Ministério Infantil da Igreja**  
+_Torne o controle, o cadastro e os registros do Ministério Infantil mais eficientes, amigáveis e seguros!_
 
-Principais Funcionalidades
+---
 
-🔄 Check-in/Check-out: Controle rápido de entrada e saída das crianças com busca por nome
-📝 Cadastro Completo: Registro detalhado das crianças com informações de contato e saúde
-📊 Relatórios Visuais: Gráficos coloridos e interativos para análise de frequência e estatísticas
-📷 Galeria de Imagens: Armazenamento e visualização de fotos de eventos e atividades
-💾 Banco de Dados Local: Armazenamento seguro em arquivos CSV sem necessidade de servidor
+## ✨ Visão Geral
 
-Estrutura do Projeto
+O **Missão Kids App** é uma aplicação destinada a equipes e voluntários do Ministério Infantil, facilitando o cadastro das crianças, o processo de check-in e check-out, e o registro seguro de presença durante cultos e eventos de igrejas evangélicas.  
+Projetado para uso local no Windows, une praticidade, segurança e facilidade de uso em uma interface moderna para toda a equipe!
 
-ministerio_kids/
-├── main.py
-├── src/
-│   ├── __init__.py
-│   ├── interface/
-│   │   ├── __init__.py
-│   │   ├── main_window.py
-│   │   ├── checkin.py
-│   │   ├── cadastro.py
-│   │   ├── relatorios.py
-│   │   └── galeria.py
-│   ├── database/
-│   │   ├── __init__.py
-│   │   └── db_manager.py
-│   └── utils/
-│       ├── __init__.py
-│       └── helpers.py
-├── assets/
-│   ├── icons/
-│   │   ├── checkin.png
-│   │   └── logo.png
-│   └── styles/
-│       └── estilo.qss
-├── data/
-│   ├── criancas.csv
-│   └── checkins.csv
-├── requirements.txt
-└── README.md
+---
 
-Módulos Principais
+## 🛠️ Funcionalidades
 
-🔄 Check-in/Check-out
-Sistema intuitivo para registrar a entrada e saída das crianças, com identificação da sala correspondente à idade. Permite busca rápida por nome e registro de visitantes sem cadastro prévio.
+- 👦 Cadastro completo das crianças com histórico de participação
+- ✅ Check-in rápido para presentes e visitantes (seguro e rastreável)
+- 🏷️ Checkout individual com informação da sala
+- 🖼️ Galeria de fotos dos eventos e do grupo
+- 📊 Relatórios detalhados de presenças, frequentadores e movimentação
+- 🔍 Busca inteligente pelo nome das crianças
+- 🌙 Interface amigável, intuitiva e pronta para uso offline no Windows!
 
-📝 Cadastro
-Formulário completo para registro de crianças com campos para:
+---
 
-Informações pessoais (nome, idade, data de nascimento)
-Contatos dos responsáveis
-Restrições alimentares e alergias
-Condições médicas
-Observações especiais
+## ⚙️ Tecnologias Utilizadas
 
-📊 Relatórios
-Visualização estatística com gráficos coloridos e interativos:
+- **Python 3**
+- **PyQt5** (Interface gráfica)
+- **Banco de Dados Local (CSV)**
+- **PyInstaller** (para geração de executável)
+- **Gerenciamento de arquivos e imagens**
 
-Total de crianças por culto
-Distribuição por faixa etária
-Frequência individual
-Aniversariantes do mês
-Visitantes vs. membros
-Crianças com restrições de saúde
-Solicitações de visita/contato
+---
 
-📷 Galeria
-Organização de fotos de eventos e atividades do ministério, com categorização e visualização em modo apresentação.
+## 🎯 Impacto
 
-Descrição para Commit
-Ministério Kids - Sistema de Gerenciamento para Ministério Infantil 🧒👦👧
+> “Otimize o controle, aumente a segurança e traga tranquilidade para pais e responsáveis. Tudo isso enquanto facilita o serviço dos voluntários!”
 
-Um aplicativo desktop completo desenvolvido em Python e PyQt5 para gerenciamento 
-de ministério infantil em igrejas evangélicas. O sistema oferece funcionalidades 
-de check-in/check-out, cadastro de crianças, relatórios estatísticos com gráficos 
-coloridos e interativos, e galeria de imagens.
+- Redução de erros na entrega e retirada das crianças
+- Registro transparente para auditorias e acompanhamento
+- Facilidade no cadastro de visitantes e crianças fixas
+- Centralização de informações para lideranças e equipes
 
-Principais recursos:
-- 🖥️ Interface amigável e intuitiva
-- 📝 Cadastro completo com informações de contato e saúde
-- 🔄 Sistema de check-in/check-out com busca por nome
-- 📊 Relatórios visuais com gráficos personalizados
-- 💾 Banco de dados local em CSV sem necessidade de servidor
-- 📷 Galeria para armazenamento e visualização de fotos
+---
 
-Ideal para igrejas de qualquer tamanho que desejam organizar seu ministério infantil
-de forma eficiente e segura.
+## 📦 Como Usar
+
+1. **Baixe o executável** a partir das releases ou gere via `PyInstaller`
+2. **Execute o app** no Windows (não requer instalação adicional do Python)
+3. **Cadastre as crianças** e gerencie sua lista de presenças e galerias de imagens!
+4. Pronto para funcionar mesmo offline ✨
+
+---
+
+## 🚀 Começando com Desenvolvimento
+
+Para rodar o projeto localmente (modo desenvolvedor):
+
+```bash
+git clone https://github.com/BitBloomAI/missao-kids-app.git
+cd missao-kids-app
+pip install -r requirements.txt
+python main.py
